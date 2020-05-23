@@ -1,0 +1,47 @@
+{
+  "name": "symbol-dispose",
+  "version": "1.0.0",
+  "description": "Symbol.dispose / Symbol.asyncDispose ponyfill",
+  "license": "MIT",
+  "repository": "spectjs/symbol-dispose",
+  "author": {
+    "name": "dy",
+    "email": "df.creative@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha && tsc && node ./ts-test/test.js && check-es3-syntax -p ./index.js --kill",
+    "build": "babel es --out-dir lib",
+    "prepublish": "npm test"
+  },
+  "main": "index.js",
+  "module": "index.mjs",
+  "jsnext:main": "index.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs"
+    },
+    "./ponyfill": {
+      "require": "./ponyfill.js",
+      "import": "./ponyfill.mjs"
+    }
+  },
+  "keywords": [
+    "symbol",
+    "dispose",
+    "disposes",
+    "ponyfill",
+    "polyfill",
+    "shim"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "check-es3-syntax-cli": "^0.1.0",
+    "mocha": "^7.2.0",
+    "typescript": "^2.1.4"
+  }
+}
