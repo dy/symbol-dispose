@@ -2,7 +2,7 @@
   "name": "symbol-dispose",
   "version": "1.0.0",
   "description": "Symbol.dispose / Symbol.asyncDispose ponyfill",
-  "license": "MIT",
+  "license": "ISC",
   "repository": "spectjs/symbol-dispose",
   "author": {
     "name": "dy",
