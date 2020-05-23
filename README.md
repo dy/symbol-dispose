@@ -5,9 +5,7 @@
 
 ## Install
 
-```
-$ npm install --save symbol-dispose
-```
+[![npm](https://nodei.co/npm/symbol-dispose.png?mini=true)](https://nodei.co/npm/symbol-dispose/)
 
 ## Basic Usage
 
